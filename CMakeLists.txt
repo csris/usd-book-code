@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.26)
 
 project(usd
 	VERSION 0.0.1
-	LANGUAGES CXX)
+	LANGUAGES C CXX)
 
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
@@ -27,5 +27,6 @@ FetchContent_Declare(
 FetchContent_MakeAvailable(benchmark)
 
 
+add_subdirectory(apps)
 add_subdirectory(book)
 add_subdirectory(src)
